@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"sort"
 )
 
 func main() {
@@ -22,5 +23,13 @@ func main() {
 	const price2, tax2 = 275.00, 666
 	const quantity, inStock = 2, true // не указываем тип
 	fmt.Println("summ -->>", quantity*(price2+tax2), inStock)
+
+	// pointers2
+	names := [3]string{"alice", "charlie", "bob"}
+
+	secondName := &names[1]
+	fmt.Println(*secondName)
+	sort.Strings(names[:])
+	fmt.Print(*secondName)
 
 }
