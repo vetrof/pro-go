@@ -31,5 +31,4 @@ func main() {
 	fmt.Println(*secondName)
 	sort.Strings(names[:])
 	fmt.Print(*secondName)
-
 }
